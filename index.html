@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Sorry Love</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating hearts layer, present on every page -->
+  <div id="hearts-bg" class="hearts-bg"></div>
+
+  <!-- ================= PAGE 1: PASSCODE ================= -->
+  <section id="page-passcode" class="page page-passcode active">
+    <div class="passcode-bg"></div>
+
+    <div class="passcode-content">
+      <div class="instax-frame floating">
+        <div class="instax-photo">
+          <img src="D:\Apologies\sorry.jpg" alt="A memory" id="instax-img">
+        </div>
+        <div class="instax-caption">for you 🤍</div>
+      </div>
+
+      <div class="passcode-panel">
+        <h1 class="passcode-title">Enter Passcode</h1>
+        <p class="passcode-sub">you know it by heart</p>
+
+        <div class="passcode-dots" id="passcode-dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <div class="keypad" id="keypad">
+          <button class="key" data-key="1">1</button>
+          <button class="key" data-key="2">2</button>
+          <button class="key" data-key="3">3</button>
+          <button class="key" data-key="4">4</button>
+          <button class="key" data-key="5">5</button>
+          <button class="key" data-key="6">6</button>
+          <button class="key" data-key="7">7</button>
+          <button class="key" data-key="8">8</button>
+          <button class="key" data-key="9">9</button>
+          <div class="key key-empty"></div>
+          <button class="key" data-key="0">0</button>
+          <button class="key key-delete" id="delete-key" aria-label="Delete">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 6H8L2 12l6 6h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1z"/>
+              <line x1="18" y1="9" x2="12" y2="15"/>
+              <line x1="12" y1="9" x2="18" y2="15"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- ================= PAGE 2: APOLOGY ================= -->
+  <section id="page-apology" class="page page-apology">
+
+    <!-- Floating photo balloons -->
+    <div class="photo-balloons">
+      <div class="photo-balloon balloon-1">
+        <div class="balloon-photo"><img src="D:\Apologies\memory1.jpg" alt="memory 1"></div>
+        <div class="balloon-string"></div>
+        <div class="balloon-knot"></div>
+      </div>
+      <div class="photo-balloon balloon-2">
+        <div class="balloon-photo"><img src="D:\Apologies\memory2.jpg" alt="memory 2"></div>
+        <div class="balloon-string"></div>
+        <div class="balloon-knot"></div>
+      </div>
+      <div class="photo-balloon balloon-3">
+        <div class="balloon-photo"><img src="D:\Apologies\memory3.jpg" alt="memory 3"></div>
+        <div class="balloon-string"></div>
+        <div class="balloon-knot"></div>
+      </div>
+      <div class="photo-balloon balloon-4">
+        <div class="balloon-photo"><img src="D:\Apologies\memory4.jpg" alt="memory 4"></div>
+        <div class="balloon-string"></div>
+        <div class="balloon-knot"></div>
+      </div>
+      <div class="photo-balloon balloon-5">
+        <div class="balloon-photo"><img src="D:\Apologies\memory5.jpg" alt="memory 5"></div>
+        <div class="balloon-string"></div>
+        <div class="balloon-knot"></div>
+      </div>
+    </div>
+
+    <div class="apology-content">
+      <h1 class="apology-title heartbeat">
+        I apologize for what happened.<br>
+        <span>Can you forgive me?</span>
+      </h1>
+
+      <p class="apology-text">
+       I know I've hurt you, and I'm truly sorry. Looking back, I understand why you're disappointed and tired. You kept reminding me because you cared, but instead of changing, I kept making the same mistakes. I stayed at your house much longer than I should have, even though I already knew it wasn't appropriate, and I'm sorry for making you feel like I didn't respect you or your family. Hearing you say that you're tired of repeating yourself and that I don't respect you and your family really hurt, but I know those words came from the pain I caused, and I take full responsibility for it. I really want a healthy and genuine relationship with you, and I don't want my apology to be just words anymore. I want to prove through my actions that I can change 
+       and become someone you can trust again. I love you so much, and I hope you'll give me the chance to earn back your trust, one step at a time.
+
+      </p>
+
+      <div class="button-row">
+        <button id="yes-btn" class="btn btn-yes">❤️ YES</button>
+        <button id="no-btn" class="btn btn-no">💔 NO</button>
+      </div>
+
+      <div id="yes-message" class="yes-message"></div>
+    </div>
+
+    <div id="confetti-canvas-wrap" class="confetti-canvas-wrap"></div>
+  </section>
+
+  <!-- ================= PAGE 3: HAPPY ENDING ================= -->
+  <section id="page-forever" class="page page-forever">
+    <div class="sparkles-bg" id="sparkles-bg"></div>
+
+    <div class="forever-layout">
+
+      <div class="lyrics-panel fade-in-up">
+        <div class="lyrics-note">now playing</div>
+        <div class="lyrics-song">Blue — yung kai</div>
+        <div class="lyrics-quote">
+          "the color of us, painted soft and slow…"
+        </div>
+        <div class="lyrics-notes-icon">🎵</div>
+      </div>
+
+      <div class="forever-content">
+        <div class="glow-heart">❤️</div>
+
+        <h1 class="forever-title fade-in-up">Thank You ❤️</h1>
+
+        <p class="forever-text fade-in-up delay-1">
+          Thank you for giving me another chance. I promise to treasure every moment with you,
+          learn from my mistakes, and do my best to make you smile every single day. You mean
+          the world to me, and I'm grateful for your forgiveness. I love you so much. ❤️
+        </p>
+
+        <button id="forever-btn" class="btn btn-forever fade-in-up delay-2">Forever ❤️</button>
+
+        <div class="music-controls fade-in-up delay-2">
+          <button id="music-toggle" class="music-btn">
+            <span id="music-icon">▶</span> <span id="music-label">Play music</span>
+          </button>
+        </div>
+
+        <button id="restart-btn" class="restart-btn fade-in-up delay-2">↺ Restart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Hidden audio elements -->
+  <audio id="click-sound" preload="auto">
+    <source src="data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=" type="audio/wav">
+  </audio>
+  <audio id="bg-music" loop preload="auto">
+    <!-- Replace this src with the path to your own legally-owned copy of the song -->
+    <source src="D:\Apologies\blue-yungkai.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
