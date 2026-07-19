@@ -8,7 +8,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ---------- CONFIG ---------- */
-  const PASSCODE = '140825'; // <-- change this to your own 6-digit passcode
+  const PASSCODE = '121706'; // <-- change this to your own 6-digit passcode
   const STORAGE_KEY = 'apology_unlocked';
 
   /* ---------- ELEMENT REFS ---------- */
